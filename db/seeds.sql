@@ -6,4 +6,4 @@ VALUES
   ('Steak burger', false),
   ('Cheeseburger', true),
   ('Rice burger', false),
-  ('Chicken burger', true)
+  ('Chicken burger', true);
