@@ -1,4 +1,4 @@
-const devoured = () => {
+const getBurgers = () => {
   axios.get('/api/burgers')
     .then(({data}) => {
       document.getElementById('devour').innerHTML = ''
@@ -34,5 +34,5 @@ document.getElementById('addBurger').addEventListener('click', event => {
   axios.post('/api/burgers', {
     burger_name: document.getElementById('name').value, devoured: 0
   })
-  devoured()
+  getBurgers()
 })

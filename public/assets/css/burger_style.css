@@ -1,0 +1,9 @@
+body {
+  background: #fdfd96;
+}
+
+#burgerImage {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
