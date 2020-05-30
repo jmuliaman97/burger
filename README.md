@@ -17,7 +17,7 @@ Create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM 
   * Install MySQL2 npm package: `npm install mysql2`
 
 ## Usage
-Open terminal and the application will be invoked with the following command: `node server.js` or go to Heroku deployment link `https://damp-hamlet-57978.herokuapp.com/`
+Open terminal and the application will be invoked with the following command: `node server.js` or go to Heroku deployed link `https://damp-hamlet-57978.herokuapp.com/`
 
 ## License
 MIT License
