@@ -3,6 +3,7 @@ const Burger = require('../models/burger.js')
 
 router.get('/', (req, res) => {
   Burger.selectBurgers((burgers) => {
+    // if devoured burger = 0 push burger to devour array else if != 0 push burger to devoured array
     let devour = []
     let devoured = []
     burgers.forEach((burger) => {
@@ -12,6 +13,7 @@ router.get('/', (req, res) => {
         devoured.push(burger)
       }
     })
+    // return rendered html
     res.render('index', { devour, devoured })
   })
 })
