@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         devoured.push(burger)
       }
     })
-    // return rendered html
+    // pass in the devour and devoured object so we're handing the views the data
     res.render('index', { devour, devoured })
   })
 })
