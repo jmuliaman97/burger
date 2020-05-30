@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const { join } = require('path')
 const app = express()
@@ -11,4 +12,4 @@ app.set('view engine', '.hbs')
 
 app.use(require('./controllers'))
 
-app.listen(3000, () => console.log('http://localhost:3000'))
+app.listen(process.env.PORT || 3000, () => console.log('http://localhost:3000'))
